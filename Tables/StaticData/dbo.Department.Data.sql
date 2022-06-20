@@ -1,7 +1,8 @@
-﻿SET IDENTITY_INSERT dbo.Department ON
+
+SET IDENTITY_INSERT [dbo].[Department] ON
 GO
-INSERT dbo.Department(DepartmentId, DepartmentName, DepartmentCode) VALUES (1, 'Administrator', 'Adm');
-INSERT dbo.Department(DepartmentId, DepartmentName, DepartmentCode) VALUES (2, 'Finance', 'Fin');
+INSERT dbo.Department(DepartmentId, DepartmentName, DepartmentCode, City) VALUES (1, 'Administrator', 'Adm', NULL);
+INSERT dbo.Department(DepartmentId, DepartmentName, DepartmentCode, City) VALUES (2, 'Finance', 'Fin', NULL);
 GO
-SET IDENTITY_INSERT dbo.Department OFF
+SET IDENTITY_INSERT [dbo].[Department] OFF
 GO
